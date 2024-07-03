@@ -27,8 +27,6 @@ def predict():
     
     # Make a prediction
     prediction = model.predict(features)[0]
-    print(prediction)
-
     return render_template('index.html', prediction=prediction)
 
 @app.route('/about')
